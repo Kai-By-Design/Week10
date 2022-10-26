@@ -4,18 +4,57 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ToDo App</title>
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
-<body>
-  <div class="container">
-    <br><br>
-    <div id="teams">
-      <h2></h2>
+<body class="container">
+  <br>
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="new-start-date">Start Date</label>
+            <input type="date" class="form-control" id="new-start-date">
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="new-end-date">End Date</label>
+            <input type="date" class="form-control" id="new-end-date">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <label for="new-task">Task</label>
+            <input type="text" class="form-control" id="new-task" placeholder="add task here">
+          </div>
+        </div>
+      </div>
+      <div>
+        <button id="add" class="btn btn-primary btn-sm form-control">Create</button>
+      </div>
+    </div>
     </div>
   </div>
 
+  <table id="list" class="table table-dark table-striped mt-4">
+    <tr class="text-center">
+      <th>Task</th>
+      <th>Date Created</th>
+      <th>Start Date</th>
+      <th>Due Date</th>
+      <th colspan="2">Actions</th>
+      <!-- <th></th> -->
+    </tr>
+  </table>
+
+  <script src="app.js"></script>
   <script src="node_modules/jquery/dist/jquery.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
+
+<!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cum blanditiis perferendis asperiores libero natus, molestiae beatae obcaecati minus iste assumenda dolorum tempore nisi dolore eum eaque placeat ullam modi? Aut aliquam accusantium modi minima quos at repellat voluptate excepturi. -->
